@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEATHER APP</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+
+        <link
+           rel="stylesheet"
+           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+     <!-- Designing the search bar and buttton -->
+
+
+     <!-- <form></form>this tag is used to create a form
+            ________________for search bar________________
+         2-----    id we can give any id name
+            input tag means hmkis type ka input  le rhe h or yha hmlog i/p search krre mtlb the search bar so wha i/p me search likha hoga(i/p form me i/p tag hmlog user input lene k liye dete h copy refer kro) 
+        3--------placeholder hota h hmlog ko kya i/p likna h wo hint deta h-->
+
+        <!-- ___________________for serach button_________________________
+         4--------u
+       5 ---------required we hv written becz it will not wrk untill i provide an i/p
+       6----------->
+
+           
+
+     <form 
+      id="search_form">         
+      <input type="search"
+      placeholder="Enter City Name"
+      id="search_input"
+      required autocomplete="off"/>
+      <br>
+      <br>
+      <button id="search_button">search</button>
+    </form>
+
+    <!-- now we will code for our actual weather box -->
+    <!-- 1------giving id to our main box 
+                 main tag in html denotes the main content of the document
+          2-------we will give its id as location 
+                    this space is for the location whose temp we want to show
+        3--------we will give its id as temp
+                 becz we want to display temp of the location here
+         4-------under this i we need weather icon along wd temp and degree celcius symbol
+                    we will give img id becz we are going to chng the icons as per temp
+          5------we gave id as temp_value becz it will chng accordingly
+        6---------symbol of celcius is already defined in html as &#176c 
+    7---------for displaying climate       -->
+          
+
+    <main id="app_container">
+        <div id="location">
+            <p>---------------</p>
+        </div>
+
+        <div id="temp">
+             <img id="temp_icon" src="sunny.png" alt="sunny day">
+             <p><span id="temp_value">----------</span> 
+            <span id="temp_unit">&#176c</span></p>
+        </div>
+
+        <div id="climate">
+            <p>---------------</p>
+        </div>
+
+    </main>
+
+
+
+
+
+
+
+
+
+    <script src="script.js">
+   
+
+    </script>
+ <div class="bottom">
+         <center>
+             <span class="credit" >Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/gur-jot"> Gurjot Singh </a> | </span>
+            <span> 2022 All rights reserved.</span>
+         </center>
+     </div>
+    
+</body>
+</html>
